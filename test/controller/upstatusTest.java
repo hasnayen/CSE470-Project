@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Controller;
+package controller;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -14,11 +14,11 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author User
+ * @author Hasnayen
  */
-public class UpstatusTest {
+public class upstatusTest {
     
-    public UpstatusTest() {
+    public upstatusTest() {
     }
     
     @BeforeClass
@@ -43,12 +43,13 @@ public class UpstatusTest {
     @Test
     public void testNam() {
         System.out.println("nam");
-        String id = "10";
+        String id = "";
         upstatus instance = new upstatus();
-        String expResult = "10";
+        String expResult = "";
         String result = instance.nam(id);
         assertEquals(expResult, result);
-        
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -57,13 +58,12 @@ public class UpstatusTest {
     @Test
     public void testUp() {
         System.out.println("up");
-        String sta = "Picked up for delivery";
-        String id = "20";
+        String sta = "";
+        String id = "";
         upstatus instance = new upstatus();
-        boolean expResult = false;
-        boolean result = instance.up(sta, id);
-        assertEquals(expResult, result);
-        
+        instance.up(sta, id);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
     
 }

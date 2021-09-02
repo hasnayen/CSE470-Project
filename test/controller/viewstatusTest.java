@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Controller;
+package controller;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -14,11 +14,11 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author User
+ * @author Hasnayen
  */
-public class AdminTest {
+public class viewstatusTest {
     
-    public AdminTest() {
+    public viewstatusTest() {
     }
     
     @BeforeClass
@@ -38,17 +38,16 @@ public class AdminTest {
     }
 
     /**
-     * Test of login method, of class admin.
+     * Test of view method, of class viewstatus.
      */
     @Test
-    public void testLogin() throws Exception {
-        System.out.println("login");
-        String email = "adnan@gmail.com";
-        String pass = "1234";
-        admin instance = new admin();
-        boolean expResult = true;
-        boolean result = instance.login(email, pass);
-        assertEquals(expResult, result);
+    public void testView() {
+        System.out.println("view");
+        String id = "";
+        viewstatus instance = new viewstatus();
+        instance.view(id);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
     
 }

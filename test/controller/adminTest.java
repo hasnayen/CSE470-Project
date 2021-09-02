@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Controller;
+package controller;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -14,11 +14,11 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author User
+ * @author Hasnayen
  */
-public class DeleteTest {
+public class adminTest {
     
-    public DeleteTest() {
+    public adminTest() {
     }
     
     @BeforeClass
@@ -38,17 +38,17 @@ public class DeleteTest {
     }
 
     /**
-     * Test of del method, of class delete.
+     * Test of login method, of class admin.
      */
     @Test
-    public void testDel() throws Exception {
-        System.out.println("del");
-        String id = "14";
-        delete instance = new delete();
-        boolean expResult = false;
-        boolean result = instance.del(id);
-        assertEquals(expResult, result);
-        
+    public void testLogin() throws Exception {
+        System.out.println("login");
+        String email = "";
+        String pass = "";
+        admin instance = new admin();
+        instance.login(email, pass);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
     
 }

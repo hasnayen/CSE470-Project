@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Controller;
+package controller;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -14,10 +14,10 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author User
+ * @author Hasnayen
  */
 public class NewitemTest {
-   
+    
     public NewitemTest() {
     }
     
@@ -30,8 +30,7 @@ public class NewitemTest {
     }
     
     @Before
-    public void setUp() throws Exception{
-        
+    public void setUp() {
     }
     
     @After
@@ -40,23 +39,17 @@ public class NewitemTest {
 
     /**
      * Test of item method, of class Newitem.
-     * @throws java.lang.Exception
      */
     @Test
     public void testItem() throws Exception {
         System.out.println("item");
-        String name = "Cheese";
-        String price = "20";
-        String id = "14";
+        String name = "";
+        String price = "";
+        String id = "";
         Newitem instance = new Newitem();
-        boolean expResult = false;
-        boolean result = instance.item(name, price, id);
-        assertEquals(expResult, result);
-        
-    }
-
-    private void assertEquals(boolean expResult, boolean result) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        instance.item(name, price, id);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
     
 }

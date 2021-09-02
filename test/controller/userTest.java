@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Controller;
+package controller;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -14,11 +14,11 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author User
+ * @author Hasnayen
  */
-public class UserTest {
+public class userTest {
     
-    public UserTest() {
+    public userTest() {
     }
     
     @BeforeClass
@@ -43,12 +43,12 @@ public class UserTest {
     @Test
     public void testSignIn() {
         System.out.println("signIn");
-        String userID = "18301049";
-        String pass = "1234";
+        String userID = "";
+        String pass = "";
         user instance = new user();
-        boolean expResult = false;
-        boolean result = instance.signIn(userID, pass);
-        assertEquals(expResult, result);
+        instance.signIn(userID, pass);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -57,17 +57,17 @@ public class UserTest {
     @Test
     public void testSignup() {
         System.out.println("signup");
-        String UserId = "1567";
-        String fName = "Nahian";
-        String lName = "GT";
-        String email = "GT@inbox.in";
-        String address = "Mohammadpur";
-        String pass = "1234";
-        String conpass = "1234";
+        String UserId = "";
+        String fName = "";
+        String lName = "";
+        String email = "";
+        String address = "";
+        String pass = "";
+        String conpass = "";
         user instance = new user();
-        boolean expResult = false;
-        boolean result = instance.signup(UserId, fName, lName, email, address, pass, conpass);
-        assertEquals(expResult, result);
+        instance.signup(UserId, fName, lName, email, address, pass, conpass);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
     
 }
