@@ -43,13 +43,13 @@ public class NewitemTest {
     @Test
     public void testItem() throws Exception {
         System.out.println("item");
-        String name = "";
-        String price = "";
-        String id = "";
+        String name = "Water";
+        String price = "15";
+        String id = "11";
         Newitem instance = new Newitem();
-        instance.item(name, price, id);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        boolean expResult = false;
+        boolean result = instance.item(name, price, id);
+        assertEquals(expResult, result);
     }
     
 }

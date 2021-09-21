@@ -11,7 +11,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-
 /**
  *
  * @author Hasnayen
@@ -41,13 +40,13 @@ public class deleteTest {
      * Test of del method, of class delete.
      */
     @Test
-    public void testDel() throws Exception {
+    public void testDel() {
         System.out.println("del");
-        String id = "";
+        String id = "3";
         delete instance = new delete();
-        instance.del(id);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        boolean expResult = true;
+        boolean result = instance.del(id);
+        assertEquals(expResult, result);
     }
     
 }

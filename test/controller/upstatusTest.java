@@ -43,13 +43,11 @@ public class upstatusTest {
     @Test
     public void testNam() {
         System.out.println("nam");
-        String id = "";
+        String id = "10";
         upstatus instance = new upstatus();
-        String expResult = "";
+        String expResult = "10";
         String result = instance.nam(id);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -58,12 +56,12 @@ public class upstatusTest {
     @Test
     public void testUp() {
         System.out.println("up");
-        String sta = "";
-        String id = "";
+        String sta = "Food being Prepared";
+        String id = "11";
         upstatus instance = new upstatus();
-        instance.up(sta, id);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        boolean expResult = true;
+        boolean result = instance.up(sta, id);
+        assertEquals(expResult, result);
     }
     
 }

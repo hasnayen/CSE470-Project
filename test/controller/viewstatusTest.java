@@ -43,11 +43,12 @@ public class viewstatusTest {
     @Test
     public void testView() {
         System.out.println("view");
-        String id = "";
+        String id = "11";
         viewstatus instance = new viewstatus();
-        instance.view(id);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        boolean expResult = true;
+        boolean result = instance.view(id);
+        assertEquals(expResult, result);
+
     }
     
 }

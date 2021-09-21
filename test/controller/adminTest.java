@@ -43,12 +43,14 @@ public class adminTest {
     @Test
     public void testLogin() throws Exception {
         System.out.println("login");
-        String email = "";
-        String pass = "";
+        String email = "hasnayen3072@gmail.com";
+        String pass = "1234";
         admin instance = new admin();
-        instance.login(email, pass);
+        boolean expResult = true;
+        boolean result = instance.login(email, pass);  
+        assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
     
 }

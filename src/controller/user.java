@@ -20,7 +20,7 @@ import javax.swing.JOptionPane;
  * @author User
  */
 public class user {
-    public void signIn(String userID, String pass){
+    public boolean signIn(String userID, String pass){
         try{
         DataConnector c = new DataConnector();
                 Connection connection = c.Connector();
@@ -40,14 +40,16 @@ public class user {
            else{
                JOptionPane.showMessageDialog(null, "Incorrect Password");
            }
+           return true;
         }
         catch(HeadlessException | ClassNotFoundException | SQLException e){
            JOptionPane.showMessageDialog(null, "UserId does not exist");
        }
+        return false;
     }
     
     
-    public void signup(String UserId,String fName,String lName,String email,String address,String pass, String conpass){
+    public boolean signup(String UserId,String fName,String lName,String email,String address,String pass, String conpass){
        try{
             DataConnector c = new DataConnector();
                 Connection connection = c.Connector();
@@ -80,10 +82,12 @@ public class user {
                     JOptionPane.showMessageDialog(null, "Password did not match");
                 }
        }
+            return true;
        
     }
        catch(HeadlessException | ClassNotFoundException | SQLException e){
                 JOptionPane.showMessageDialog(null, "Somethnig went wrong");
                }
+            return false;
     }
 }

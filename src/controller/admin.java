@@ -14,38 +14,36 @@ import javax.swing.JOptionPane;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author User
  */
 public class admin {
-    public void login(String email, String pass) throws SQLException, ClassNotFoundException{
-        try{
+
+    public boolean login(String email, String pass) throws SQLException, ClassNotFoundException {
+        try {
             DataConnector c = new DataConnector();
-        
-                Connection connection = c.Connector();
-                String query="SELECT Password FROM admin1 WHERE Email='"+email+"'";
-        
+
+            Connection connection = c.Connector();
+            String query = "SELECT Password FROM admin1 WHERE Email='" + email + "'";
+
             Statement statement = connection.createStatement();
-        
+
             ResultSet result;
             result = statement.executeQuery(query);
             result.next();
             String name = result.getString("Password");
-           if(name.equals(pass)){
-               JOptionPane.showMessageDialog(null, "Successfull Login");
-                Admin_Pannel admin= new Admin_Pannel();
+            if (name.equals(pass)) {
+                JOptionPane.showMessageDialog(null, "Successfull Login");
+                Admin_Pannel admin = new Admin_Pannel();
                 admin.setVisible(true);
-           }
-           else{
-               JOptionPane.showMessageDialog(null, "Incorrect Password");
-           }
+            } else {
+                JOptionPane.showMessageDialog(null, "Incorrect Password");
+            }
+            return true;
+        } catch (HeadlessException | ClassNotFoundException | SQLException e) {
+            JOptionPane.showMessageDialog(null, "Email does not exist");
         }
-        catch(HeadlessException | ClassNotFoundException | SQLException e){
-           JOptionPane.showMessageDialog(null, "Email does not exist");
-       }
+        return false;
     }
-    }
-  
-   
+}

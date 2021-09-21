@@ -10,7 +10,6 @@ import javax.swing.JOptionPane;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author User
@@ -42,7 +41,6 @@ public class DeleteItem extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -100,9 +98,6 @@ public class DeleteItem extends javax.swing.JFrame {
         });
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 330, -1, -1));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/Untitled-10.png"))); // NOI18N
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 10, 600, 560));
-
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Untitled-10.png"))); // NOI18N
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 570));
 
@@ -122,21 +117,18 @@ public class DeleteItem extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        try{
+        try {
             String id = jTextField3.getText();
-            if(id==null||id.trim().isEmpty()){
+            if (id == null || id.trim().isEmpty()) {
                 JOptionPane.showMessageDialog(null, "Empty input");
-            }
-           
-            else{
+            } else {
                 delete d = new delete();
-                   d.del(id);
+                d.del(id);
             }
-           
-            }
-         catch(HeadlessException | ClassNotFoundException | SQLException e){
-                JOptionPane.showMessageDialog(null, "CatalogueID does not exist");
-               } 
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "CatalogueID does not exist");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -193,7 +185,6 @@ public class DeleteItem extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables

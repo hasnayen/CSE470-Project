@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 07, 2021 at 09:37 PM
--- Server version: 10.4.13-MariaDB
--- PHP Version: 7.4.7
+-- Generation Time: Sep 20, 2021 at 10:17 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `HOTFood`
+-- Database: `hotfood`
 --
 
 -- --------------------------------------------------------
@@ -40,7 +40,7 @@ CREATE TABLE `admin1` (
 
 INSERT INTO `admin1` (`Email`, `FName`, `LName`, `Password`) VALUES
 ('\0', '\0', '\0', '?'),
-('adnan@gmail.com', 'adnan', 'shafi', '1234');
+('hasnayen3072@gmail.com', 'Abu Hasnayen', 'Zillanee', '1234');
 
 -- --------------------------------------------------------
 
@@ -113,7 +113,8 @@ CREATE TABLE `user1` (
 --
 
 INSERT INTO `user1` (`UserID`, `FName`, `LName`, `Email`, `Address`, `Password`) VALUES
-('147', 'adnan', 'shafi', 'adnan@gmail.com', 'dhaka', '1234');
+('[1]', '[Abu Hasnayen]', '[Zillanee]', '[hasnayen3072@gmail.com]', '[Lalbag]', '[123]'),
+('[1]', '[Abu Hasnayen]', '[Zillanee]', '[hasnayen3072@gmail.com]', '[Lalbag]', '[123]');
 
 --
 -- Indexes for dumped tables

@@ -3,25 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/src/view/Admin_Pannel.java</file>
-            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/test/Controller/AdminTest.java</file>
-            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/test/Controller/TestAllFiles.java</file>
-            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/src/view/User_SignIn.java</file>
-            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/src/view/View_orderStatus.java</file>
-            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/src/view/AddNewItem.java</file>
-            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/src/view/User_login.java</file>
-            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/test/Controller/DeleteTest.java</file>
-            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/src/controller/Newitem.java</file>
+            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/src/controller/admin.java</file>
             <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/src/view/Opening_page.java</file>
-            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/test/Controller/ViewstatusTest.java</file>
-            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/src/view/DeleteItem.java</file>
-            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/src/view/Admin_Login.java</file>
+            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/test/controller/NewitemTest.java</file>
             <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/src/model/DataConnector.java</file>
-            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/test/Controller/UpstatusTest.java</file>
-            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/test/Controller/UserTest.java</file>
-            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/src/view/UpdateStatus.java</file>
-            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/src/view/User_pannel.java</file>
-            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/test/Controller/NewitemTest.java</file>
+            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/test/controller/TestAllFiles.java</file>
+            <file>file:/C:/Users/Hasnayen/Desktop/Summer%2021/CSE421/LAB03/CSE470/test/controller/adminTest.java</file>
         </group>
     </open-files>
 </project-private>

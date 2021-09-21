@@ -43,12 +43,14 @@ public class userTest {
     @Test
     public void testSignIn() {
         System.out.println("signIn");
-        String userID = "";
-        String pass = "";
+        String userID = "1";
+        String pass = "123";
         user instance = new user();
         instance.signIn(userID, pass);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        boolean expResult = true;
+        boolean result = instance.signIn(userID, pass);
+        assertEquals(expResult, result);
+
     }
 
     /**
@@ -57,17 +59,17 @@ public class userTest {
     @Test
     public void testSignup() {
         System.out.println("signup");
-        String UserId = "";
-        String fName = "";
-        String lName = "";
-        String email = "";
-        String address = "";
-        String pass = "";
-        String conpass = "";
+        String UserId = "3";
+        String fName = "abul";
+        String lName = "kalam";
+        String email = "kalam@gmail.com";
+        String address = "Azimpur";
+        String pass = "123";
+        String conpass = "123";
         user instance = new user();
-        instance.signup(UserId, fName, lName, email, address, pass, conpass);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        boolean expResult = true;
+        boolean result = instance.signup(UserId, fName, lName, email, address, pass, conpass);
+        assertEquals(expResult, result);
     }
     
 }
